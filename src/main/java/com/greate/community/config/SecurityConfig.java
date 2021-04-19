@@ -45,7 +45,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements Comm
                     "/user/setting",
                         "/user/upload",
                         "/discuss/add",
-                        "/comment/add",
+                        "/comment/add/**",
                         "/letter/**",
                         "/notice/**",
                         "/like",
@@ -68,6 +68,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter implements Comm
 
                 .antMatchers(
                         "/discuss/delete",
+                        "/discuss/delete/",
                         "/data/**"
                 )
                 .hasAnyAuthority(

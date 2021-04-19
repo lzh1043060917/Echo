@@ -1,17 +1,17 @@
-# Echo — 开源社区系统
-
----
-
 ## 📚 项目简介
 
 Echo 是一套前后端不分离的开源社区系统，基于目前主流 Java Web 技术栈（SpringBoot + MyBatis + MySQL + Redis + Kafka + Elasticsearch + Spring Security + ...），并提供详细的开发文档和配套教程。包含帖子、评论、私信、系统通知、点赞、关注、搜索、用户设置、数据统计等模块。
 
 **源码链接**：已托管在 Github 和 Gitee：
 
+- Gitee：[https://gitee.com/veal98/Echo](https://gitee.com/veal98/Echo)（Gitee 官方推荐项目）
 - Github：[https://github.com/Veal98/Echo](https://github.com/Veal98/Echo)
-- Gitee：[https://gitee.com/veal98/Echo](https://gitee.com/veal98/Echo)
 
 **在线体验**：项目已经部署到<u>腾讯云</u>服务器，各位小伙伴们可直接线上体验：[http://1.15.127.74/](http://1.15.127.74/)。已内置三种不同身份的用户：
+
+> **各位请不要修改这三种内置角色的密码**，默认注册的用户是普通用户，您修改了密码后其他小伙伴就没法体验管理员和版主角色了。若想要测试修改密码功能，可以自己重新注册个用户，注意填写真实邮箱，否则无法接收激活邮件并激活角色。感谢各位的配合 ~
+>
+> 另外，为防止**恶意修改密码**行为，若遇上管理员和版主角色登录失败的情况，可以下方扫码关注公众号【飞天小牛肉】回复 `备用角色` 获取**备用登录用户名和密码**。
 
 |          | username | password |      特殊权限      |
 | :------: | :------: | :------: | :----------------: |
@@ -19,7 +19,46 @@ Echo 是一套前后端不分离的开源社区系统，基于目前主流 Java 
 |   版主   |  master  |  master  | 置顶帖子、加精帖子 |
 | 普通用户 |   user   |   user   |                    |
 
-**文档地址**：文档通过 <u>Docsify + Gitee Pages</u> 生成，国内访问速度较快，在线访问地址：[https://veal98.gitee.io/echo](https://veal98.gitee.io/echo)
+**文档地址**：文档通过 <u>Docsify + Github/Gitee Pages</u> 生成
+
+- Github Pages：[https://veal98.github.io/Echo](https://veal98.github.io/Echo)
+- Gitee Pages：[https://veal98.gitee.io/echo](https://veal98.gitee.io/echo)
+
+## 📖 配套教程
+
+想要自己从零开始实现这个项目或者深入理解的小伙伴，可以扫描下方二维码关注公众号『**飞天小牛肉**』回复 `Echo` 获取配套教程，订阅话题 [Echo 学习教程](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI0NDc3ODE5OQ==&action=getalbum&album_id=1744497649518493697&scene=173&from_msgid=2247485209&from_itemidx=3&count=3&uin=&key=&devicetype=Windows+10+x64&version=63010043&lang=zh_CN&ascene=1&session_us=gh_089c9f6e334b&fontgear=2) 第一时间获取更新。本套教程不仅会详细解释本项目涉及的各大技术点，还会汇总相关的常见面试题，目前尚在更新中。
+
+<img width="220px" src="https://gitee.com/veal98/images/raw/master/img/20210204145531.png"  />
+
+并推荐我的开源教程类项目 [『 CS-Wiki 』](https://gitee.com/veal98/CS-Wiki)，Gitee 推荐项目，目前已累积 1.5k star： 致力打造完善的 Java 后端知识体系，不仅仅帮助各位小伙伴快速且系统的准备面试(秋招/社招)，更指引学习的方向。
+
+### 序章
+
+- [必读：Echo 项目的 README](https://mp.weixin.qq.com/s/iiukwRNW1-my1q6UjYl4iw)
+- [Echo 项目结构分析](https://mp.weixin.qq.com/s/dZqSB0EN5-rmGQeG3Lx2jA)
+- [Echo 数据库表是如何设计的](https://mp.weixin.qq.com/s/DG549DzLy3NhXwpsOWaXYA)
+- [Echo 技术选型分析](https://mp.weixin.qq.com/s/tTBzyMklFtBfkyvuh8W0Nw)
+
+### 部署篇
+
+- [修订版 | Echo 在 Windows 环境下的部署](https://mp.weixin.qq.com/s/VAtpaXvYJ7mDPmez0QV3ww)
+- [Echo 在 Linux 服务器上的部署](https://mp.weixin.qq.com/s/q9X5sJv7mtPaSApZB0PxPA)
+
+### 业务逻辑篇
+
+- [Echo 的注册功能是怎么做的](https://mp.weixin.qq.com/s/SC2FRPrVUbNw5ySHopOpHQ)
+- [Echo 的登录认证和授权是怎么做的](https://mp.weixin.qq.com/s/DjGvuNYu5Fjvw3Gjha4ulw)
+- [Echo 的发帖操作是怎么做的](https://mp.weixin.qq.com/s/OsCd3Pcl6iq-0znh7PL3lg)
+- [Echo 的帖子列表与分页是怎么做的](https://mp.weixin.qq.com/s/R5CtsXaS9hIOOePxQZcZhg)
+- 未完待续
+
+### 技术要点篇
+
+- 待更
+
+### 常见面试题
+
+- 待更
 
 ## 💻 核心技术栈
 
@@ -108,24 +147,16 @@ Echo 是一套前后端不分离的开源社区系统，基于目前主流 Java 
 ![](https://gitee.com/veal98/images/raw/master/img/20210208222403.png)
 
 - [x] **注册**
-  - 用户注册成功，将用户信息存入 MySQL，但此时该用户状态为未激活
-  - 向用户发送激活邮件，用户点击链接则激活账号（Spring Mail）
-
 - [x] **登录 | 登出**
-  - 进入登录界面，动态生成验证码，并将验证码短暂存入 Redis（60 秒）
-  - 用户登录成功（验证用户名、密码、验证码），生成登录凭证且设置状态为有效，并将登录凭证存入 Redis
-    注意：登录凭证存在有效期，在所有的请求执行之前，都会检查凭证是否有效和是否过期，只要该用户的凭证有效并在有效期时间内，本次请求就会一直持有该用户信息（使用 ThreadLocal 持有用户信息）
-  - 勾选记住我，则延长登录凭证有效时间
-  - 用户登录成功，将用户信息短暂存入 Redis（1 小时）
-  - 用户登出，将凭证状态设为无效，并更新 Redis 中该用户的登录凭证信息
-
+  - 动态生成验证码
+  - 记住我
 - [x] **账号设置**
   - 修改头像
-    - 将用户选择的头像图片文件上传至七牛云服务器
   - 修改密码
-
+- [x] **过滤敏感词**
+  - 前缀树
 - [x] **帖子模块**
-  - 发布帖子（过滤敏感词），将其存入 MySQL
+  - 发布帖子（过滤敏感词）
   - 分页显示所有的帖子
     - 支持按照 “发帖时间” 显示
     - 支持按照 “热度排行” 显示（Spring Quartz）
@@ -135,14 +166,12 @@ Echo 是一套前后端不分离的开源社区系统，基于目前主流 Java 
     - “版主” 可以看到帖子的置顶和加精按钮并执行相应操作
     - “管理员” 可以看到帖子的删除按钮并执行相应操作
     - “普通用户” 无法看到帖子的置顶、加精、删除按钮，也无法执行相应操作
-
 - [x] **评论模块**
-  - 发布对帖子的评论（过滤敏感词），将其存入 MySQL
+  - 发布对帖子的评论（过滤敏感词）
   - 分页显示评论
   - 发布对评论的回复（过滤敏感词）
   - 权限管理（Spring Security）
     - 未登录用户无法使用评论功能
-
 - [x] **私信模块**
   - 发送私信（过滤敏感词）
   - 私信列表
@@ -155,13 +184,10 @@ Echo 是一套前后端不分离的开源社区系统，基于目前主流 Java 
     - 支持分页显示
   - 权限管理（Spring Security）
     - 未登录用户无法使用私信功能
-
 - [x] **统一处理 404 / 500 异常**
   - 普通请求异常
   - 异步请求异常
-
 - [x] **统一记录日志**
-
 - [x] **点赞模块**
   - 支持对帖子、评论/回复点赞
   - 第 1 次点赞，第 2 次取消点赞
@@ -171,7 +197,6 @@ Echo 是一套前后端不分离的开源社区系统，基于目前主流 Java 
   - 统计我的获赞数量
   - 权限管理（Spring Security）
     - 未登录用户无法使用点赞相关功能
-
 - [x] **关注模块**
   - 关注功能
   - 取消关注功能
@@ -180,7 +205,6 @@ Echo 是一套前后端不分离的开源社区系统，基于目前主流 Java 
   - 我的粉丝列表（查询某个用户的粉丝），支持分页
   - 权限管理（Spring Security）
     - 未登录用户无法使用关注相关功能
-
 - [x] **系统通知模块**
   - 通知列表
     - 显示评论、点赞、关注三种类型的通知
@@ -193,36 +217,19 @@ Echo 是一套前后端不分离的开源社区系统，基于目前主流 Java 
   - 导航栏显示所有消息的未读数量（未读私信 + 未读系统通知）
   - 权限管理（Spring Security）
     - 未登录用户无法使用系统通知功能
-
 - [x] **搜索模块**
-  - 发布事件
-    - 发布帖子时，通过消息队列将帖子异步地提交到 Elasticsearch 服务器
-    - 为帖子增加评论时，通过消息队列将帖子异步地提交到 Elasticsearch 服务器
-  - 搜索服务
-    - 从 Elasticsearch 服务器搜索帖子
-    - 从 Elasticsearch 服务器删除帖子（当帖子从数据库中被删除时）
-  - 显示搜索结果
-
 - [x] **网站数据统计**（管理员专属）
   - 独立访客 UV
-    - 存入 Redis 的 HyperLogLog
     - 支持单日查询和区间日期查询
   - 日活跃用户 DAU
-    - 存入 Redis 的 Bitmap
     - 支持单日查询和区间日期查询
   - 权限管理（Spring Security）
     - 只有管理员可以查看网站数据统计
-
 - [x] **优化网站性能**
-  - 使用本地缓存 Caffeine 缓存热帖列表以及所有用户帖子的总数
+  - 处理每次请求时，都要通过拦截器根据登录凭证查询用户信息，访问的频率非常高。因此将已成功登录的用户信息在缓存 Redis 中保存一段时间，查询用户信息的时候优先从缓存中取值；若缓存中没有该用户信息，则将其存入缓存；用户信息变更时清除对应的缓存数据；
+  - 引入本地缓存 Caffeine，缓存热帖列表和帖子的总数，避免缓存雪崩（这里面还能再加一层二级缓存 Redis）。
 
 ## 🔐 待实现及优化
-
-以下是我个人发现的本项目存在的问题，但是暂时没有头绪无法解决，集思广益，欢迎各位小伙伴提 PR 解决：
-
-- [ ] 注册模块无法正常跳转到操作提示界面（本地运行没有问题）
-- [ ] 评论功能的前端显示部分存在 Bug
-- [ ] 查询我的评论（未完善）
 
 以下是我觉得本项目还可以添加的功能，同样欢迎各位小伙伴提 issue 指出还可以增加哪些功能，或者直接提 PR 实现该功能：
 
@@ -269,88 +276,6 @@ Echo 是一套前后端不分离的开源社区系统，基于目前主流 Java 
 
 <img src="https://gitee.com/veal98/images/raw/master/img/20210217134928.png" style="width:386px" />
 
-## 📜 数据库设计
-
-用户 `user`：
-
-```sql
-DROP TABLE IF EXISTS `user`;
-SET character_set_client = utf8mb4 ;
-CREATE TABLE `user` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(50) DEFAULT NULL,
-  `password` varchar(50) DEFAULT NULL,
-  `salt` varchar(50) DEFAULT NULL,
-  `email` varchar(100) DEFAULT NULL,
-  `type` int(11) DEFAULT NULL COMMENT '0-普通用户; 1-超级管理员; 2-版主;',
-  `status` int(11) DEFAULT NULL COMMENT '0-未激活; 1-已激活;',
-  `activation_code` varchar(100) DEFAULT NULL,
-  `header_url` varchar(200) DEFAULT NULL,
-  `create_time` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `index_username` (`username`(20)),
-  KEY `index_email` (`email`(20))
-) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8;
-```
-
-讨论帖 `discuss_post`：
-
-```sql
-DROP TABLE IF EXISTS `discuss_post`;
-SET character_set_client = utf8mb4 ;
-CREATE TABLE `discuss_post` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `user_id` int(11) DEFAULT NULL,
-  `title` varchar(100) DEFAULT NULL,
-  `content` text,
-  `type` int(11) DEFAULT NULL COMMENT '0-普通; 1-置顶;',
-  `status` int(11) DEFAULT NULL COMMENT '0-正常; 1-精华; 2-拉黑;',
-  `create_time` timestamp NULL DEFAULT NULL,
-  `comment_count` int(11) DEFAULT NULL,
-  `score` double DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `index_user_id` (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-```
-
-评论（回复）`comment`：
-
-```sql
-CREATE TABLE `comment` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `user_id` int(11) DEFAULT NULL,
-  `entity_type` int(11) DEFAULT NULL COMMENT '评论目标的类别：1 帖子；2 评论 ',
-  `entity_id` int(11) DEFAULT NULL COMMENT '评论目标的 id',
-  `target_id` int(11) DEFAULT NULL COMMENT '指明对谁进行评论',
-  `content` text,
-  `status` int(11) DEFAULT NULL COMMENT '状态：0 正常；1 禁用',
-  `create_time` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `index_user_id` (`user_id`),
-  KEY `index_entity_id` (`entity_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=247 DEFAULT CHARSET=utf8;
-```
-
-私信 `message`：
-
-```sql
-DROP TABLE IF EXISTS `message`;
-SET character_set_client = utf8mb4 ;
-CREATE TABLE `message` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `from_id` int(11) DEFAULT NULL,
-  `to_id` int(11) DEFAULT NULL,
-  `conversation_id` varchar(45) NOT NULL,
-  `content` text,
-  `status` int(11) DEFAULT NULL COMMENT '0-未读;1-已读;2-删除;',
-  `create_time` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `index_from_id` (`from_id`),
-  KEY `index_to_id` (`to_id`),
-  KEY `index_conversation_id` (`conversation_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-```
-
 ## 🌌 部署架构
 
 我每个都只部署了一台，以下是理想的部署架构：
@@ -377,21 +302,18 @@ CREATE TABLE `message` (
 - 用户注册成功，将用户信息存入 MySQL，但此时该用户状态为未激活
 - 向用户发送激活邮件，用户点击链接则激活账号（Spring Mail）
 
-<img src="https://gitee.com/veal98/images/raw/master/img/20210204222249.png" style="width:660px" />
+<img width="660px" src="https://gitee.com/veal98/images/raw/master/img/20210204222249.png" />
 
 ### 登录 | 登出
 
-- 进入登录界面，动态生成验证码，并将验证码短暂存入 Redis（60 秒）
+登录认证模块跳过了 Spring Secuity 自带的认证机制。主要逻辑如下：
 
-- 用户登录成功（验证用户名、密码、验证码），生成登录凭证且设置状态为有效，并将登录凭证存入 Redis
-
-  注意：登录凭证存在有效期，在所有的请求执行之前，都会检查凭证是否有效和是否过期，只要该用户的凭证有效并在有效期时间内，本次请求就会一直持有该用户信息（使用 ThreadLocal 持有用户信息）
-
-- 勾选记住我，则延长登录凭证有效时间
-
-- 用户登录成功，将用户信息短暂存入 Redis（1 小时）
-
-- 用户登出，将凭证状态设为无效，并更新 Redis 中该用户的登录凭证信息
+- 进入登录界面，随机生成一个字符串来标识这个将要登录的用户，将这个字符串短暂的存入 Cookie（60 秒）；
+- 动态生成验证码，并将验证码及标识该用户的字符串短暂存入 Redis（60 秒）；
+- 为登录成功（验证用户名、密码、验证码）的用户随机生成登录凭证且设置状态为有效，并将登录凭证及其状态等信息永久存入 Redis，再在 Cookie 中存一份登录凭证；
+- 使用拦截器在所有的请求执行之前，从 Cookie 中获取登录凭证，只要 Redis 中该凭证有效并在有效期内，本次请求就会一直持有该用户信息（使用 ThreadLocal 持有用户信息，保证多台服务器上用户的登录状态同步）；
+- 勾选记住我，则延长 Cookie 中登录凭证的有效时间；
+- 用户登出，将凭证状态设为无效，并更新 Redis 中该登录凭证的相关信息。
 
 下图是登录模块的功能逻辑图，并没有使用 Spring Security 提供的认证逻辑（我觉得这个模块是最复杂的，这张图其实很多细节还没有画全）
 
@@ -403,7 +325,7 @@ CREATE TABLE `message` (
 - 支持按照 “热度排行” 显示（Spring Quartz）
 - 将热帖列表和所有帖子的总数存入本地缓存 Caffeine（利用分布式定时任务 Spring Quartz 每隔一段时间就刷新计算帖子的热度/分数 — 见下文，而 Caffeine 里的数据更新不用我们操心，它天生就会自动的更新它拥有的数据，给它一个初始化方法就完事儿）
 
-<img src="https://gitee.com/veal98/images/raw/master/img/20210204222822.png" style="width:660px" />
+<img width="660px" src="https://gitee.com/veal98/images/raw/master/img/20210204222822.png" />
 
 
 
@@ -415,11 +337,13 @@ CREATE TABLE `message` (
 
 此处只画出修改头像：
 
-<img src="https://gitee.com/veal98/images/raw/master/img/20210206121201.png" style="width:700px" />
+<img width="700px" src="https://gitee.com/veal98/images/raw/master/img/20210206121201.png" />
 
 ### 发布帖子（异步请求）
 
-<img src="https://gitee.com/veal98/images/raw/master/img/20210206122521.png" style="width:660px" />
+发布帖子（过滤敏感词），将其存入 MySQL
+
+<img width="660px" src="https://gitee.com/veal98/images/raw/master/img/20210206122521.png" />
 
 ### 显示评论及相关信息
 
@@ -429,23 +353,25 @@ CREATE TABLE `message` (
 
 评论 Comment 的目标类型（帖子，评论） entityType 和 entityId 以及对哪个用户进行评论/回复 targetId 是由前端传递给 DiscussPostController 的
 
-<img src="https://gitee.com/veal98/images/raw/master/img/20210207150925.png" style="width:660px" />
+<img width="660px" src="https://gitee.com/veal98/images/raw/master/img/20210207150925.png" />
 
 一个帖子的详情页需要封装的信息大概如下：
 
-<img src="https://gitee.com/veal98/images/raw/master/img/20210207151328.png" style="width:660px" />
+<img width="660px" src="https://gitee.com/veal98/images/raw/master/img/20210207151328.png" />
 
 ### 添加评论（事务管理）
 
-<img src="https://gitee.com/veal98/images/raw/master/img/20210207122908.png" style="width:660px" />
+发布对帖子的评论（过滤敏感词），将其存入 MySQL
+
+<img width="660px" src="https://gitee.com/veal98/images/raw/master/img/20210207122908.png" />
 
 ### 私信列表和详情页
 
-<img src="https://gitee.com/veal98/images/raw/master/img/20210207161130.png" style="width:700px" />
+<img width="700px" src="https://gitee.com/veal98/images/raw/master/img/20210207161130.png" />
 
 ### 发送私信（异步请求）
 
-<img src="https://gitee.com/veal98/images/raw/master/img/20210207161500.png" style="width:660px" />
+<img width="660px" src="https://gitee.com/veal98/images/raw/master/img/20210207161500.png" />
 
 ### 点赞（异步请求）
 
@@ -453,11 +379,11 @@ CREATE TABLE `message` (
 
 某个用户的获赞数量对应的存储在 Redis 中的 key 是 `like:user:userId`，value 就是这个用户的获赞数量
 
-<img src="https://gitee.com/veal98/images/raw/master/img/20210207165837.png" style="width:700px" />
+<img width="700px" src="https://gitee.com/veal98/images/raw/master/img/20210207165837.png"  />
 
 ### 我的获赞数量
 
-<img src="https://gitee.com/veal98/images/raw/master/img/20210207170003.png" style="width:660px" />
+<img width="660px" src="https://gitee.com/veal98/images/raw/master/img/20210207170003.png" />
 
 ### 关注（异步请求）
 
@@ -468,11 +394,11 @@ CREATE TABLE `message` (
 
 同样的，将某个实体拥有的粉丝相关信息也存储在 Redis 的数据结构 zset 中：key 是 `follower:entityType:entityId`，对应的 value 是 `zset(userId, now)`，以关注的时间进行排序
 
-<img src="https://gitee.com/veal98/images/raw/master/img/20210207174046.png" style="width:660px" />
+<img width="660px" src="https://gitee.com/veal98/images/raw/master/img/20210207174046.png" />
 
 ### 关注列表
 
-<img src="https://gitee.com/veal98/images/raw/master/img/20210207175621.png" style="width:660px" />
+<img width="660px" src="https://gitee.com/veal98/images/raw/master/img/20210207175621.png" />
 
 ### 发送系统通知
 
@@ -484,15 +410,32 @@ CREATE TABLE `message` (
 
 ### 搜索
 
+- 发布事件
+  - 发布帖子时，通过消息队列将帖子异步地提交到 Elasticsearch 服务器
+  - 为帖子增加评论时，通过消息队列将帖子异步地提交到 Elasticsearch 服务器
+- 搜索服务
+  - 从 Elasticsearch 服务器搜索帖子
+  - 从 Elasticsearch 服务器删除帖子（当帖子从数据库中被删除时）
+- 显示搜索结果
+
 ![](https://gitee.com/veal98/images/raw/master/img/20210208161936.png)
 
 类似的，置顶、加精也会触发发帖事件，就不再图里面画出来了。
 
 ### 置顶加精删除（异步请求）
 
-<img src="https://gitee.com/veal98/images/raw/master/img/20210208171729.png" style="width:660px" />
+<img width="660px" src="https://gitee.com/veal98/images/raw/master/img/20210208171729.png" />
 
 ### 网站数据统计
+
+- 独立访客 UV
+  - 存入 Redis 的 HyperLogLog
+  - 支持单日查询和区间日期查询
+- 日活跃用户 DAU
+  - 存入 Redis 的 Bitmap
+  - 支持单日查询和区间日期查询
+- 权限管理（Spring Security）
+  - 只有管理员可以查看网站数据统计
 
 ![](https://gitee.com/veal98/images/raw/master/img/20210208170801.png)
 
@@ -512,31 +455,29 @@ double score = Math.log10(Math.max(w, 1))
 
 ![](https://gitee.com/veal98/images/raw/master/img/20210208173636.png)
 
-## 📖 配套教程
-
-想要自己从零开始实现这个项目或者深入理解的小伙伴，可以扫描下方二维码关注公众号『**飞天小牛肉**』回复 `Echo` 获取配套教程，订阅话题 [Echo 学习教程](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzI0NDc3ODE5OQ==&action=getalbum&album_id=1744497649518493697&scene=173&from_msgid=2247485209&from_itemidx=3&count=3&uin=&key=&devicetype=Windows+10+x64&version=63010043&lang=zh_CN&ascene=1&session_us=gh_089c9f6e334b&fontgear=2) 第一时间获取更新。本套教程不仅会详细解释本项目涉及的各大技术点，还会汇总相关的常见面试题，目前尚在更新中。
-
-<img src="https://gitee.com/veal98/images/raw/master/img/20210204145531.png" style="width:260px" />
-
-并推荐我的开源教程类项目 [『 CS-Wiki 』](https://gitee.com/veal98/CS-Wiki)，Gitee 推荐项目，目前已 0.9k star： 致力打造完善的 Java 后端知识体系，不仅仅帮助各位小伙伴快速且系统的准备面试(秋招/社招)，更指引学习的方向
-
-### 序章
-
-- [必读：Echo 项目的 README](https://mp.weixin.qq.com/s/iiukwRNW1-my1q6UjYl4iw)
-- [Echo 项目结构分析](https://mp.weixin.qq.com/s/dZqSB0EN5-rmGQeG3Lx2jA)
-- Echo 数据库表分析
-
-### 部署篇
-
-- [Echo 在 Windows 环境下的部署](https://mp.weixin.qq.com/s/ZgYGqLB5_rfCXNrW9jqgtQ)
-- [Echo 在 Linux 服务器上的部署](https://mp.weixin.qq.com/s/q9X5sJv7mtPaSApZB0PxPA)
-
 ## 📞 联系我
 
 有什么问题也可以添加我的微信，记得备注来意：格式 <u>（学校或公司 - 姓名或昵称 - 来意）</u>
 
-<img width="260px" src="https://gitee.com/veal98/images/raw/master/img/微信图片_20210105121328.jpg" >
+<img width="220px" src="https://gitee.com/veal98/images/raw/master/img/微信图片_20210105121328.jpg" >
+
+## 🙋 微信交流群
+
+下方扫码加入 Echo 微信交流群，实时跟进项目进度，第一时间获取教程更新，分享您的想法，还能帮您解决遇到的问题。如果二维码过期可以上方扫码加我微信回复 “Echo 交流群”，我拉你进群：
+
+<img width="235px" src="https://gitee.com/veal98/images/raw/master/img/20210305100109.jpg" >
 
 ## 👏 鸣谢
 
 博主水平有限，本项目参考[牛客网](https://www.nowcoder.com/) — Java 高级工程师课程，感谢老师和平台。
+
+另外，若发现 Bug 或好的想法可以积极与我联系或提 PR / issue，采纳后您将出现在下方列表中。感谢以下小伙伴对本项目做出的贡献，排名按照时间先后：
+
+- [freedom_dh](https://gitee.com/dh_free)
+- [paulisusu](https://gitee.com/paulisusu)
+
+> 🔗 友情链接（若您想要出现在这里，可以上方扫描微信二维码联系我）：
+>
+> - [CS-Wiki](https://gitee.com/veal98/CS-Wiki)：致力打造完善的 Java 后端知识体系，不仅仅帮助各位小伙伴快速且系统的准备面试，更指引学习的方向
+> - [Furion](https://gitee.com/dotnetchina/Furion)：让 .NET 开发更简单，更通用，更流行
+> - [Free-Fs](https://gitee.com/dh_free/free-fs)：Spring Boot 开源云文件管理系统，方便快捷的管理云存储的文件
